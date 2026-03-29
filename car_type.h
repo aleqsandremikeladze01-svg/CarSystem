@@ -45,10 +45,10 @@ class Car{
         }
         void print() const{
             cout << "---------------------------" << endl;
-            cout << "Model: " << this->model << endl;
-            cout << "ID: " << this->ID << endl;
-            cout << "Color: " << this->color << endl;
-            cout << "Year: " << this->year << endl;
+            cout << "Model: " << get_model() << endl;
+            cout << "ID: " << get_ID() << endl;
+            cout << "Color: " << get_color() << endl;
+            cout << "Year: " << get_year() << endl;   
             cout << "-----------------------------" << endl;
         }
 };
