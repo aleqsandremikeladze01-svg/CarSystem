@@ -73,20 +73,20 @@ class Car_Salon{
             }
             return true;
         }
-        Status add(Car&& new_car){
+        Status add(const Car& new_car){
             if(Number_type >= Max_Number){
                     cout << "Car salon is full. Cannot add more cars." << endl;
                     return Status::Error;
                 }   
             if(is_unique(new_car)){
                 Car_type[Number_type] = new_car;
-                Number_type++;
+                Number_type++;      
                 return Status::Added;      
             }
             cout << "Error: ID already exists!"<< endl;
             return Status::Error;
         }
-        Status sell(Car&& remove_car){
+        Status sell(const Car& remove_car){
             if(Number_type == 0) return Status::Not_Found;
 
             for(int i = 0; i < Number_type; i++){

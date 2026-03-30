@@ -45,7 +45,7 @@ int main(){
                 cin >> year;
                 
                 if(cin.fail()){
-                    cout << "Error: Plese enter a number: " << endl;
+                    cout << "Error: Please enter a number: " << endl;
                     cin.clear();
                     cin.ignore(1000, '\n');
                     continue;
@@ -64,7 +64,7 @@ int main(){
             }
             case Save:{
                 salon.save_to_file();
-                cout << "Save of succssesfully" << endl;
+                cout << "Saved succssesfully" << endl;
                 break;
             }
             case Print:{
